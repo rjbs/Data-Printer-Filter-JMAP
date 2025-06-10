@@ -44,6 +44,8 @@ filter 'JSON::Typist::String' => sub {
 filter 'JSON::PP::Boolean' => sub {
   my ($object, $ddp) = @_;
 
+  $ddp->unsee($object);
+
   my $s = $object ? "true" : "false";
 
   return  $ddp->maybe_colorize($s, $s)
