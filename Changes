@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.002     2025-06-10 09:42:16-04:00 America/New_York
         - JSON bools now have "unsee" called so each one serializes as itself,
           not a reference to the first time we saw a true/false previously
 
